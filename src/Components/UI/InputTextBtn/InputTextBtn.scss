@@ -1,0 +1,30 @@
+@use "../../../Style/Import.scss" as import;
+.InputTextBtn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	&__title {
+		margin-right: 10px;
+		&--style {
+			@include import.ComfortaaBold(16px, #000000);
+		}
+	}
+	&__content {
+		margin: 10px 0;
+		display: flex;
+		&--input {
+			margin-right: 10px;
+		}
+		&--btn {
+			padding: 5px 10px;
+			border: 0.5px solid #000000;
+			border-radius: 10px;
+			@include import.ComfortaaMedium(14px, #000000);
+			&:hover {
+				color: aquamarine;
+				border: 0.5px solid aquamarine;
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+@use "../../../Style/Import.scss" as import;
+.InputText {
+	display: flex;
+	align-items: center;
+	margin: 10px;
+	&.pos {
+		flex-direction: column;
+	}
+	&__title {
+		margin-right: 10px;
+		&--style {
+			@include import.ComfortaaBold(16px, #000000);
+		}
+	}
+	&__input {
+		margin: 10px 0;
+		&--style {
+			width: 100%;
+			padding: 5px 10px;
+			border: 0.5px solid #000000;
+			border-radius: 10px;
+			@include import.ComfortaaMedium(14px, #000000);
+		}
+	}
+}

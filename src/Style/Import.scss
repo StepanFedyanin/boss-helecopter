@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+@mixin ComfortaaMedium($fz, $color) {
+	font-family: "Comfortaa", cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: $fz;
+	line-height: 140%;
+	color: $color;
+}
+
+@mixin ComfortaaBold($fz, $color) {
+	font-family: "Comfortaa", cursive;
+	font-style: normal;
+	font-weight: 500;
+	font-size: $fz;
+	line-height: 140%;
+	color: $color;
+}

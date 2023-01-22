@@ -1,0 +1,83 @@
+@use "../../Style/Import.scss" as import;
+
+.App {
+	&__container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	&__setting {
+		&--content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		&--global {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+		}
+		&--privat {
+			display: flex;
+		}
+		&--calculate {
+			.App__calculate--btn {
+				padding: 5px 10px;
+				border: 0.5px solid #000000;
+				border-radius: 10px;
+				@include import.ComfortaaMedium(14px, #000000);
+				&:hover {
+					color: aquamarine;
+					border: 0.5px solid aquamarine;
+				}
+			}
+		}
+	}
+	&__display {
+		display: flex;
+		height: 480px;
+		&--cover {
+			position: relative;
+			display: flex;
+			align-items: flex-end;
+		}
+		&--img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+		&--bg {
+			transition: all 0.5s;
+			background-color: rgb(101, 245, 120);
+			width: 300px;
+			margin-top: 85px;
+		}
+		&--info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 50%;
+			.App__info--item {
+				margin: 20px 0;
+				display: flex;
+				width: 50%;
+				justify-content: space-between;
+				align-items: center;
+				.App__item--title {
+					border-bottom: 1px dotted #000000;
+					width: 100%;
+					p {
+						@include import.ComfortaaMedium(14px, #000000);
+					}
+				}
+				.App__item--meating {
+					p {
+						@include import.ComfortaaMedium(14px, #000000);
+					}
+				}
+			}
+		}
+	}
+}
