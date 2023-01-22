@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/boss-helecopter/static/css/main.7d7ddf87.css",
+    "main.js": "/boss-helecopter/static/js/main.f600fe5b.js",
+    "static/media/Home.svg": "/boss-helecopter/static/media/Home.2dceb84b975aa685950b0c710d0ccbfb.svg",
+    "index.html": "/boss-helecopter/index.html",
+    "main.7d7ddf87.css.map": "/boss-helecopter/static/css/main.7d7ddf87.css.map",
+    "main.f600fe5b.js.map": "/boss-helecopter/static/js/main.f600fe5b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d7ddf87.css",
+    "static/js/main.f600fe5b.js"
+  ]
+}
